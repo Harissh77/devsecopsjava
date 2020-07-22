@@ -19,7 +19,7 @@ stages
   {
     steps
     {
-       sh 'docker run  --rm  gesellix/trufflehog --json  https://github.com/redashu/day3devsecopsjsp.git > bug.log'
+       sh 'docker run  --rm  gesellix/trufflehog --json  https://github.com/Harissh77/devsecopsjava.git > bug.log'
        sh 'bug.log'
     }
   } 
