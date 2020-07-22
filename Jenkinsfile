@@ -19,8 +19,10 @@ stages
   {
     steps
     {
+      
        sh 'docker run  --rm  gesellix/trufflehog --json  https://github.com/Harissh77/devsecopsjava.git > bug.log'
        sh 'bug.log'
+      
     }
   } 
   stage('Build Java Project')
