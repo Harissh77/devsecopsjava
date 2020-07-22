@@ -19,7 +19,8 @@ stages
   {
     steps
     {
-       sh 'docker run --rm  ashu:secv1'
+       sh 'docker run  --rm  gesellix/trufflehog --json  https://github.com/redashu/day3devsecopsjsp.git > bug.log'
+       sh 'bug.log'
     }
   } 
   stage('Build Java Project')
