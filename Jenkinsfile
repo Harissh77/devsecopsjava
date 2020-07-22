@@ -21,7 +21,7 @@ stages
     {
       
        sh 'docker run  --rm  gesellix/trufflehog --json  https://github.com/Harissh77/devsecopsjava.git > bug.txt'
-       sh 'bug.txt'
+       sh 'cat bug.txt'
       
     }
   } 
