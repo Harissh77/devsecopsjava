@@ -15,6 +15,13 @@ stages
        sh 'mvn -v'
     }
   }
+  stage('Security Check')
+  {
+    steps
+    {
+       sh 'docker run --rm  ashu:secv1'
+    }
+  } 
   stage('Build Java Project')
   {
     steps
