@@ -12,7 +12,7 @@ stages
   {
     steps
     {
-       sh 'mnv -v'
+       sh 'mvn -v'
     }
   }
 }
